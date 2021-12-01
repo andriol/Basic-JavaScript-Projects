@@ -102,6 +102,7 @@ function displayMenu(menuItems) {
             <p class="item-text">
               ${item.desc}
             </p>
+         
           </div>
         </article>`;
   });
@@ -113,7 +114,7 @@ function displayMenu(menuItems) {
 function menuButtons() {
   const menuBtns = menu.reduce(
     function (values, item) {
-      console.log(values, item); // item => the objects in the array // values => the button categories
+      //console.log(values, item); // item => the objects in the array // values => the button categories
       if (!values.includes(item.category)) {
         values.push(item.category);
       }
